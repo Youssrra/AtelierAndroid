@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".HobbiesFragment"
+android:id="@+id/materialCardViewHobbies"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="24dp"
+android:layout_marginTop="40dp"
+android:layout_marginEnd="24dp"
+android:background="@drawable/background_border"
+    >
+
+
+<TextView
+    android:id="@+id/textViewSkills"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:text="Hobbies"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_horizontal|center_vertical"
+    android:layout_marginTop="35dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/checkboxMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:checked="false"
+        android:text="Music"
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/colorPrimaryLight" />
+
+    <CheckBox
+        android:id="@+id/checkboxSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:text="Sport"
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/colorPrimaryLight" />
+
+    <CheckBox
+        android:id="@+id/checkboxGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:text="Games"
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/colorPrimaryLight" />
+</RadioGroup>
+
+</FrameLayout>
